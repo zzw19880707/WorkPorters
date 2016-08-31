@@ -1,0 +1,22 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+target 'WorkPorters' do
+use_frameworks!
+
+pod 'XMPPFramework'
+pod 'SVProgressHUD'
+pod 'CryptoSwift' #secret
+pod 'IQKeyboardManager'
+pod 'MLEmojiLabel'
+pod 'Kingfisher' #sdwebimage
+
+pod 'Alamofire', '~> 3.4.2'
+#pod 'Alamofire' #networking
+pod 'SnapKit' #masonry
+pod 'AlamofireObjectMapper' #model
+pod 'EZSwiftExtensions'
+pod 'LeanCloud', :git => 'git@github.com:leancloud/swift-sdk.git'
+pod 'SwiftyJSON'
+
+end
+
