@@ -31,6 +31,8 @@ class LoginViewController: WPBaseViewController {
         if isPasswordLogin { //密码登陆
             LCUser.logIn(username: usernameTF.text!, password: passwordTF.text!.md5(), completion: { ( result ) in
                 if result.isSuccess {
+                    NSUserDefaults.standardUserDefaults().setValue(result.object?.sessionToken?.value, forKey: "sessionToken")
+                    NSUserDefaults.standardUserDefaults().synchronize()
                     UIApplication.sharedApplication().keyWindow?.rootViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MainViewController")
                 }else{
                     self.showMessageWithAutoDismiss("用户名或密码错误")
