@@ -16,5 +16,7 @@ class HomeViewController: WPBaseViewController {
             print(jobs)
         }
         
+        print("userName ====  \(LCUser.current?.username?.JSONString)")
+        
     }
 }

@@ -15,6 +15,8 @@
 		EE4AC3441D76BB92009BD509 /* WPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AC3431D76BB92009BD509 /* WPBaseViewController.swift */; };
 		EE4AC3471D76BBE1009BD509 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AC3461D76BBE1009BD509 /* HomeViewController.swift */; };
 		EE4AC34B1D76BEC2009BD509 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AC34A1D76BEC2009BD509 /* Job.swift */; };
+		EE5B58C11D77CD500056EA11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5B58C01D77CD500056EA11 /* LoginViewController.swift */; };
+		EE9425D71D77F69B00B84896 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9425D61D77F69B00B84896 /* RegViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		EE4AC3431D76BB92009BD509 /* WPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WPBaseViewController.swift; path = base/WPBaseViewController.swift; sourceTree = "<group>"; };
 		EE4AC3461D76BBE1009BD509 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = home/HomeViewController.swift; sourceTree = "<group>"; };
 		EE4AC34A1D76BEC2009BD509 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Job.swift; path = home/model/Job.swift; sourceTree = "<group>"; };
+		EE5B58C01D77CD500056EA11 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = login/LoginViewController.swift; sourceTree = "<group>"; };
+		EE9425D61D77F69B00B84896 /* RegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegViewController.swift; path = login/RegViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			children = (
 				EE4AC32D1D7680FA009BD509 /* AppDelegate.swift */,
 				EE4AC3311D7680FA009BD509 /* Main.storyboard */,
+				EE5B58B71D77CC050056EA11 /* Login */,
 				EE4AC3481D76BC0C009BD509 /* Home */,
 				EE4AC3451D76BB97009BD509 /* Base */,
 				EE4AC3341D7680FA009BD509 /* Assets.xcassets */,
@@ -106,7 +111,8 @@
 		EE4AC3481D76BC0C009BD509 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EE4AC3461D76BBE1009BD509 /* HomeViewController.swift */,
+				EE5B58B91D77CC1D0056EA11 /* View */,
+				EE5B58B81D77CC0E0056EA11 /* VC */,
 				EE4AC3491D76BE95009BD509 /* model */,
 			);
 			name = Home;
@@ -118,6 +124,38 @@
 				EE4AC34A1D76BEC2009BD509 /* Job.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		EE5B58B71D77CC050056EA11 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EE5B58BA1D77CC240056EA11 /* VC */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EE5B58B81D77CC0E0056EA11 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EE4AC3461D76BBE1009BD509 /* HomeViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		EE5B58B91D77CC1D0056EA11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EE5B58BA1D77CC240056EA11 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EE5B58C01D77CD500056EA11 /* LoginViewController.swift */,
+				EE9425D61D77F69B00B84896 /* RegViewController.swift */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4AC3441D76BB92009BD509 /* WPBaseViewController.swift in Sources */,
+				EE9425D71D77F69B00B84896 /* RegViewController.swift in Sources */,
 				EE4AC32E1D7680FA009BD509 /* AppDelegate.swift in Sources */,
 				EE4AC3471D76BBE1009BD509 /* HomeViewController.swift in Sources */,
+				EE5B58C11D77CD500056EA11 /* LoginViewController.swift in Sources */,
 				EE4AC34B1D76BEC2009BD509 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -349,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,7 +410,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WorkPorters-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -386,7 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueMobi.shenyang.WorkPorters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WorkPorters-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

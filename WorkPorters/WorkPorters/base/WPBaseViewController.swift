@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeanCloud
 
 class WPBaseViewController: UIViewController {
 
@@ -21,7 +20,12 @@ class WPBaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func showMessageWithAutoDismiss(message : String ) -> Void {
+        SVProgressHUD.showWithStatus(message)
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)( 1 * Double( NSEC_PER_SEC) )), dispatch_get_main_queue()){
+            SVProgressHUD.dismiss()
+        }
+    }
 
     /*
     // MARK: - Navigation
